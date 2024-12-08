@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Bedelia's</title>
+     
+  </head>
+  <style>
+   
+ 
+   body{
+      background-color:#FEF3DF;
+    }
+
+    .img{
+      border-style: solid;
+      border-color: #1A3E62;
+    }
+    .gfg {
+            position: relative;
+            width: 100%;
+            text-align: center;
+    }
+
+    div.transbox {
+      margin: 30px;
+      background-color:#1A3E62;
+      ;
+      border: 1px solid #102942;
+
+    }
+/* this makes part of box*/
+    div.transbox p {
+      margin: 5%;
+      font-weight: bold;
+      color: #1A3E62;
+}
+
+/* this is the main title color */
+    .title{
+      color:#655d4e;
+    }
+
+/* this is the main text color */
+    .text{
+      color:#655d4e;
+    }
+
+/* menu text */
+  .partext{
+  color:#655d4e;
+  font-size: 17px;
+}
+
+/* menu desc text */
+  .babypartext{
+  color: #06212d;
+  ;
+  font-size: 15px;
+}
+
+/* this is the color for the buttom */
+    .button{
+      color:#D1DFE0;
+    }
+
+    .darkbrown{
+      color: rgb(222, 213, 255);
+      ;
+    }
+    .dropDownSize { 
+      width:150px; 
+
+}
+
+/* these are the main colors */
+    .colors {
+    color:#FBF5DF;
+    color:#FAEBC4;
+    color:#FEF3DF; 
+    color:#1A3E62;
+    color:#156181;
+    color:#D1DFE0;
+  }
+
+  /* this is the tabs styles */
+    .style {
+      margin: 0;
+      padding: 0;
+    }
+
+    .CTR  {
+      border: 1px solid #1A3E62;
+      margin: 1rem;
+    }
+
+    [data-tab-info] {
+      display: none;
+    }
+
+    .active[data-tab-info] {
+      display: block;
+    }
+
+    .tab-content {
+      margin-top: 1rem;
+      padding-left: 1rem;
+      font-size: 20px;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+    }
+
+    .tabs {
+      border-bottom: 1px #1A3E62;
+      background-color: #1A3E62;
+      font-size: 25px;
+      color: rgb(222, 213, 255);
+      display: flex;
+      margin: 0;
+    }
+
+    .tabs span {
+      background: #1A3E62;
+      padding: 10px;
+      border: 1px solid #1A3E62;
+    }
+/* this should change the tabs' opacity */
+    .tabs span:hover {
+      background:#1A3E62;
+      cursor: pointer;
+      color: black;
+      opacity: 0.5;
+    }
+/* this is the end of tabs style */
+  </style>
+  <body> 
+        
+<!-- this starts the tabs -->
+        <div class="CTR">
+      
+          <div class="tabs">
+            <span data-tab-value="#Home">Home</span>
+            <span data-tab-value="#Menu">Menu</span>
+            <span data-tab-value="#Events">Events</span>
+            <span data-tab-value="#About_Us">About Us</span>
+            <!-- <span data-tab-value="#Contact_Info">Contact Info</span> -->
+          </div>
+      
+          <div class="tab-content">
+            <div class="tabs__tab active" id="Home" data-tab-info>
+              <!-- this is the logo-->
+              <div class="gfg">
+                <img class="img" src=
+                  "https://i.pinimg.com/736x/69/1a/8b/691a8b7526897689e822c855fe83eba0.jpg" 
+                  height="200" width="280">
+              <div class="transbox">
+                <h1 class="darkbrown">Bedelia's</h1>
+              </div>
+              </div>
+            <h1></h1>
+              <!-- this will be the home info -->
+             
+              <h3>contact us</h3>
+              <p class="text">Bedelia@gmail.com</p> 
+              <p class="text">To make a reservation call </p>
+              <p class="text">859-393-2069</p>
+              <!-- The text field -->
+              <!-- <output type="text" value="Hello World" id="myInput">
+              The button used to copy the text
+              <button onclick="copyPaste()">859-816-3230</button> -->
+            </div>
+            
+            <div class="tabs__tab" id="Menu" data-tab-info>
+              <div class="gfg">
+              <div class="transbox">
+                <h1 class="darkbrown">Menu</h1>
+              </div>
+              <p class="text">MENU</p>
+              <p class="text"><u>Appetizers</u></p>
+              <!-- Gyoza -->
+              <p class="partext">Gyoza</p>
+              <p class="babypartext">Japanese dumplings made of dough and filled with</p>
+              <p class="babypartext">mushrooms, onions, carrots, leeks, and cabbage;</p>
+              <p class="babypartext">seasoned with salt, garlic, and ginger.</p>
+              <!-- Yakitori -->
+              <p class="partext">Tofu and Mushroom Yakitori</p>
+              <p class="babypartext">A japanese barbeque skewer; made with mushrooms and green onions. 
+                Grilled over a charcoal fire and brushed with tare sauce.</p>
+              <!-- Onigiri -->
+              <p class="partext">Onigiri</p>
+              <p class="babypartext">White rice balls, grilled option available</p>
+              <!-- Agedashi Tofu -->
+              <p class="partext">Agedashi Tofu</p>
+              <p class="babypartext">Deep-fried tofu, served with a tentsuyu dipping sauce (made with dashi, soy sauce, and mirin)</p>
+
+              <p class="text"><u>Entree</u></p>
+              <!-- Sushi -->
+              <p class="partext">Sushi</p>
+              <p class="babypartext">Small balls or rolls of cooked rice served with vegetables</p>
+              <!-- Ramen -->
+              <p class="partext">Ramen</p>
+              <p class="babypartext">Bowl of ramen noodles, topped with seaweed and diced green onions</p>
+              <!-- Kare-raisu -->
+              <p class="partext">Kare-raisu</p>
+              <p class="babypartext">Rice served with curry and vegetables</p>
+              <!-- Shabu Shabu -->
+              <p class="partext">Shabu Shabu</p>
+              <p class="babypartext">A platter of cabbage, mushrooms, carrots, onions, and tofu with a bowl of dashi broth and small bowl of soy sauce</p>
+              <!-- Miso Soup -->
+              <p class="partext">Miso Soup</p>
+              <p class="babypartext">Traditional Japanese soup consisting of miso paste, dried seaweed, green onions, and tofu</p>
+              <!-- Udon -->
+              <p class="partext">Udon</P>
+              <p class="babypartext">Thick noodles made from wheat flour. Served with shiitake mushrooms, soy sauce, eggplant, and deep fried firm tofu cutlets</p>
+              <!-- Soba -->
+              <p class="partext">Soba</p>
+              <p class="babypartext">Japanese noodles made from buckwheat flour. Served with a dipping sauce and a green onion garnish.</p>
+              <!-- Tofu -->
+              <p class="partext">Tofu</p>
+              <p class="babypartext">A bowl of blocks of coagulated and compressed soy milk.</p>
+              <!-- Natto -->
+              <p class="partext">Nattō</p>
+              <p class="babypartext">Traditional Japanese food made of fermented soy beans, served with rice and your choice of sauce.</p>
+              <!-- Somen -->
+              <p class="partext">Somen</p>
+              <p class="babypartext">Thin wheat noodles served cold.</p>
+              <!-- Hiyashi Chuka -->
+               <p class="partext">Hiyashi Chuka</p>
+               <p class="babypartext">A bowl of noodles, cucumbers, and tomatos served cold.</p>
+
+              <p class="text">Dessert</p>
+              <!-- Black Sesame Cookies -->
+              <p class="partext">Black Sesame Cookies</p>
+              <p class="babypartext">Sweet cookies baked to perfection using</p>
+              <p class="babypartext">sesame medjool dates, whtie and black sesame seeds, and some vanilla extract</p>
+              <!-- Warabi Mochi -->
+              <p class="partext">Warabi Mochi</p>
+              <p class="babypartext">Chilled, chewy, and jelly-like mochi made of bracken starch. Dusted with roasted soybean flour and drizzled with kuromitsu</p>
+              <!-- Kabocha Squash Pie -->
+              <p class="partext">Kabocha Squash Pie</p>
+              <p class="babypartext">A delicious pie made using Kambocha pumkin, pureed squash, and a crust made using pecans.</p>
+              <!-- Matcha Mille Crepe Cake -->
+              <p class="partext">Matcha Mille Crepe Cake</p>
+              <p class="babypartext">A Japanese-style Mille Crepe Cake with rounded edges of matcha-covered crepes stacked 10 layers tall</p>
+              <!-- Zenzai -->
+              <p class="partext">Zenzai</p>
+              <p class="babypartext">A traditional Japanese dessert soup made with sweet azuki beans. It is served hot with your choice of mochi or shiatama dango.</p>
+
+              <p class="text">Drinks</p>
+              <!-- Green Tea -->
+              <p class="partext">Green Tea</p>
+              <!-- Royal Milk Tea -->
+              <p class="partext">Royal Milk Tea</p>
+              <!-- Bubble Tea -->
+              <p class="partext">Bubble Tea </p>
+              <!-- Cherry Blossom Tea -->
+              <p class="partext">Cherry Blossom Tea</p>
+              <!-- Mugicha -->
+              <p class="partext">Mugicha</p>
+              <!-- Hojicha  -->
+              <p class="partext">Hojicha</p>
+              <!-- Black Sesame Latte -->
+              <p class="partext">Black Sesame Latte</p>
+              <!-- Coffee -->
+              <p class="partext">Coffee</p>
+              <!-- Kombucha -->
+              <p class="partext">Kombucha</p>
+              <!-- Mitsuya Cider -->
+              <p class="partext">Mitsuya Cider</p>
+              </div>
+            </div>
+
+            <div class="tabs__tab" id="Events" data-tab-info>
+              <div class="gfg">
+              <div class="transbox">
+                <h1 class="darkbrown">Events</h1>
+              </div>
+              </div>
+            <h1></h1>
+              <!-- this will hold "event" info -->
+            
+              <h3>Reservations</h3>
+              <form class="row g-3" action="https://formsubmit.co/bedeliasrestaurant@gmail.com" method="POST">
+                <div>
+                  <div class="text">
+                    <label for="firstname">First name</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="display" required/>
+                    <label for="lname">Last name</label>
+                    <input type="text" name="lname" id="lname" placeholder="display" required/>
+                  </div>
+                  <br>
+                  <div class="text">
+                    <label for="mail">E-Mail</label>
+                    <input type="email" name="mail" id="mail" placeholder="display" required/>
+                  </div>
+                  <br>
+                  <div class="text">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="display" required/>
+                  </div>
+                  <br>
+                  <div class="text">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" name="guests" id="guests" min="0" max="30">
+                  </div>
+                  <br>
+                  <div class="text">
+                    <label for="RevType">Reservation Type</label>
+                    <select>
+                      <option>Bedelia's Suite</option>
+                      <option> Kim K III's Suite</option>
+                      <option>The Salamandorian Suite</option>
+                      <option>The General Rosaleni</option>
+                      <option>The General Bonnie</option>
+                      <option>The General Jolie</option>
+                      <option>The General Sony</option>
+                      <option>The General Daisy</option>
+                      <option>The General Johnny</option>
+                    </select>
+                  </div>
+                  <br>
+                  <div class="text">
+                    <label for="requests">Any special requests </label>
+                    <input type="text" name="requests" id="requests" placeholder="display" />
+                  </div>
+                  <br>
+                    <p class="text">Reservation Date</p>
+                 <div class="text">
+                    <input type="date" name="revDate" id="revDate" required/>
+                  </div>
+                  <br>
+                  
+                  <p class="text">Reservation Time</p>
+                </div>
+                <div class="text">
+                    <input type="time" name="revTime" id="revTime" required/>
+                  </div>
+                  <br>
+                  <div class="text">
+                    <label for="Payment">Payment</label>
+                    <select>
+                      <option>Mastercard</option>
+                      <option>Visa</option>
+                      <option>Giftcard</option>
+                    </select>
+                  </div>
+                  <br>
+                  <div class="text">
+                    <input type="reset" name="reset" id="reset">
+                
+               
+                    <input type="submit" name="submit" id="submit">
+                </div>
+                
+          </div>
+            </form>
+
+            <div class="tabs__tab" id="About_Us" data-tab-info>
+              <div class="gfg">
+              <div class="transbox">
+                <h1 class="darkbrown">About Us</h1>
+              </div>
+              </div>
+            <h1></h1>
+            <p class="text">In the year 1521, our esteemed founder, Jimothy Salamandorian, proudly raised his beloved chicken,
+              Bedelia. Over time, the bond between them deepened, even as Jimothy navigated through his seventh or eighth
+               marriage. Amidst the ups and downs of life, he entered Bedelia into numerous pageants, and she triumphed
+                every time.</p>
+           <p class="text">However, calamity struck in 1527 when famine swept through the land. Jimothy's wife, Kim K III,
+              took their six children—Rosaleni, Bonnie, Jolie, Sony, Daisy, and Johnny—to Bologna, where they tragically
+              succumbed to the rat plague. The villagers, witnessing Jimothy’s despair and hunger, urged him to consider
+              eating Bedelia or giving her to another family. But steadfast in his loyalty, Jimothy refused to part with
+              her, ultimately succumbing to starvation.</p>
+            <p class="text">After his death, Jimothy's remarkable resilience became a point of fascination. His body
+                    was transported across continents for study, finally arriving in Japan in 1530. There, amidst a serene
+                     pond teeming with fish, something extraordinary happened: Jimothy rose again. The locals, awed by this 
+                     miracle, offered him food—fish and seaweed—but he declined.</p>
+            <p class="text">Instead, Jimothy launched a store, creatively selling non-meat delicacies he scavenged 
+                   from the beaches. His legacy of love for Bedelia transformed into a thriving business, reminding all of
+                    the bonds that endure, even in the face of adversity.</p>
+            </div>
+
+
+
+
+            </div>
+            <!-- contact info commented out will add tab back later if we figure out hoe to redirect to bottom of home page -->
+            <!-- <div class="tabs__tab" id="Contact_Info" data-tab-info> -->
+              <!-- <div class="gfg"> -->
+              <!-- <div class="transbox"> -->
+                <!-- <h1 class="darkbrown">Yamato-e & Shokuji.</h1> -->
+              <!-- </div> -->
+              <!-- </div> -->
+            <!-- <h1>contact us</h1> -->
+              <!-- <p class="text">redirect to bottom of home page :3</p> -->
+              <!-- <p class="text"> Yamotoeandshokuji@gmail.com</p> -->
+              <!-- <p class="text"> 859-393-2069</p> -->
+              <!-- <p class="text">To make a reservation call</p> -->
+              <!-- The text field -->
+              <!-- <output type="text" value="Hello World" id="myInput">  -->
+              <!-- The button used to copy the text -->
+              <!-- <button onclick="copyPaste()">859-816-3230</button> -->
+            <!-- </div> -->
+
+
+        <script type="text/javascript">
+      
+          // function to get each tab details
+          const tabs = document.querySelectorAll('[data-tab-value]')
+          const tabInfos = document.querySelectorAll('[data-tab-info]')
+      
+          tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+              const target = document
+                .querySelector(tab.dataset.tabValue);
+              tabInfos.forEach(tabInfo => {
+                tabInfo.classList.remove('active')
+              })
+              target.classList.add('active');
+            })
+          })
+        </script>
+  <div class="CTR">
+
+
+  <script type="text/javascript">
+
+   
+
+    // this is for the copy paste buttons
+  function copyPaste() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+  }
+  </script>
+
+
+  <!-- this is a button if needed for later -->
+<!--
+<a class="button" href="https://www.youtube.com/watch?v=d1NjkYjRn34">
+  Yippee -->
+
+  </body>
+</html>
